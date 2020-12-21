@@ -74,7 +74,7 @@ body{
     text-indent: -3000px;
     width: 241px;
     height: 50px;
-    background: url('public/images/logo-fb.png') no-repeat center;
+    background: url('../images/logo-fb.png') no-repeat center;
     margin: 30px 0 40px;
 }
 
@@ -146,7 +146,7 @@ body{
 #phone{
     width: 454px;
     height: 618px;
-    background: url('public/images/mockup.png');
+    background: url('../images/mockup.png');
     position: relative;
 }
 
@@ -161,14 +161,14 @@ body{
 }
 
 #screenshot1{
-    background: url('public/images/screenshot1.png');
+    background: url('../images/screenshot1.png');
     position: absolute;
     transition: all 400ms;
     z-index: 1;    
 }
 
 #screenshot3{
-    background: url('public/images/screenshot3.png');
+    background: url('../images/screenshot3.png');
     transition: all 400ms;
     position: absolute;
     z-index: 3;
@@ -221,7 +221,7 @@ body{
     margin: 40px 0 16px 0;
     width: 176px;
     height: 51px;
-    background: url('public/images/logo.png');
+    background: url('../images/logo.png');
 }
 
 #form-login form{
@@ -301,7 +301,7 @@ input.form-class::placeholder{
     border: 1px solid;
     width: 20px;
     height: 20px;
-    background: url('public/icons/faceboowhite-icon.jpg');
+    background: url('../icons/faceboowhite-icon.jpg');
     border-radius: 1px;
     margin: 0 10px;
 }
@@ -319,7 +319,7 @@ input.form-class::placeholder{
     width: 20px;
     height: 20px; 
     margin-right: 10px;
-    background: url('public/icons/facebook-icon.jpg');
+    background: url('../icons/facebook-icon.jpg');
     border-radius: 3px;
 }
 
