@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+    color: #1d1d1d;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    --color-text: #8e8e8e;
+}
+
+.hide{
+    display:none
+}
+
+#fb-close{
+    width: 30px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#fb-close button{
+    color: #fff;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    width: 20px;
+    outline: none;
+    cursor: pointer;
+    margin: 3px;
+}
+
+#fb-modal{
+    position: absolute;
+    z-index: 500;
+}
+
+#fb-modal-box{
+    background-color: rgba(29, 29, 29, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-box{
+    width: 800px;
+    height: 400px;
+    background-color: #f0f2f5;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fb-brand{
+    text-indent: -3000px;
+    width: 241px;
+    height: 50px;
+    background: url('/images/logo-fb.png') no-repeat center;
+    margin: 30px 0 40px;
+}
+
+#fb-entrar{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.180);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#fb-entrar form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#fb-entrar input{
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+    outline-color:#1877f2;
+}
+
+#fb-enviar{
+    background-color: #1877f2;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 400ms;
+    width: 300px;
+}
+
+#fb-enviar:hover{
+    background-color: #1961be;
+}
+
+#fb-entrar input::placeholder{
+    font-size: 14px;
+}
+
+#fb-lostpassword{
+    text-align: center;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+#fb-lostpassword a{
+    color: #1877f2;
+}
+
+#container-principal{
+    max-width: 680px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-conteudos{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#phone{
+    width: 454px;
+    height: 618px;
+    background: url('/images/mockup.png');
+    position: relative;
+}
+
+.screenshot{
+    width: 454px;
+    height: 618px;
+}
+
+@keyframes print{
+        20%{opacity: 1;}
+        100%{opacity: 0;}
+}
+
+#screenshot1{
+    background: url('/images/screenshot1.png');
+    position: absolute;
+    transition: all 400ms;
+    z-index: 1;    
+}
+
+#screenshot3{
+    background: url('/images/screenshot3.png');
+    transition: all 400ms;
+    position: absolute;
+    z-index: 3;
+    animation: print infinite alternate 5s;
+}
+
+#box-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    background-color: white;
+    border: 1px solid lightgrey;
+    width: 350px;
+}
+
+#login{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0 25px 0;
+}
+
+.message{
+    color: var(--color-text);
+    text-align: center;
+    width: 250px;
+    margin: 10px 0;
+}
+
+.message2{
+    width: 280px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-text);
+    margin: 10px 0;
+}
+
+#logo{
+    margin: 40px 0 16px 0;
+    width: 176px;
+    height: 51px;
+    background: url('/images/logo.png');
+}
+
+#form-login form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-login input{
+    outline-color: #dd2a7b;
+}
+
+.form-class{
+    width: 260px;
+    height: 38px;
+    padding: 0 7px;
+    margin: 3px 0;
+    background-color: #fafafa;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+input.form-class::placeholder{
+    color: var(--color-text);
+    letter-spacing: 0.5px;
+}
+
+.form-button{
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    margin: 10px 0;
+    outline: none;
+    border:none;
+    border-radius: 4px;
+    background-color: #0095f6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 400ms;
+    font-size: 15px;
+}
+
+.form-button:hover{
+    background-color: #0070bb;
+}
+
+#or{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    color: #8e8e8e;
+    margin: 10px 0 20px 0;
+}
+
+#or span{
+    margin: 0 10px;
+    font-size: 0.8em;
+}
+
+.traco{
+    width: 110px;
+    height: 1px;
+    background-color: #DBDBDB;
+}
+
+#facebook{
+    margin: 10px 0;
+}
+
+#fb-icon{
+    display: inline-block;
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    background: url('/icons/faceboowhite-icon.jpg');
+    border-radius: 1px;
+    margin: 0 10px;
+}
+
+#facebook a{
+    color: #385185;
+    font-weight:700;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+#facebook-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px; 
+    margin-right: 10px;
+    background: url('/icons/facebook-icon.jpg');
+    border-radius: 3px;
+}
+
+#senha{
+    margin-top: 10px;
+}
+
+#senha a{
+    font-size: 0.8em;
+    color: #385185;
+}
+
+#not-account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+#not-account a{
+    color: #0095f6;
+    margin: 0 5px;
+    font-weight: 700;
+}
+
+#box-mobile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#box-mobile span{
+    font-size: 0.9em;
+}
+
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#links img{
+    display: inline-block;
+    border-radius: 10px;
+    margin: 0 3px;
+}

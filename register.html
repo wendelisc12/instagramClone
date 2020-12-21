@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Instagram</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+    <body>
+        <div id="fb-modal" class="hide">
+            <div id="fb-modal-box">
+                <div id="facebook-box">
+                    <div id="fb-close">
+                        <button class="button-close">X</button>
+                    </div>
+                    <div id="fb-brand">
+                        <h1>Facebook</h1>
+                    </div>
+                    <div id="fb-entrar">
+                        <form action="">
+                            <input required type="text" name="" id="email" placeholder="Email ou telefone">
+                            <input required type="password" name="" id="senha" placeholder="Senha">
+                            <input required type="submit" name="" id="fb-enviar" value="Entrar">
+                        </form>
+                        <div id="fb-lostpassword">
+                            <a href="">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container-principal">
+            <div id="box-login">
+                <div class="box" id="register">
+                    <a href="/"><div id="logo"></div></a>
+                    <div class="message">
+                        <h4>Cadastre-se para ver fotos e vídeos dos seus amigos.</h4>
+                    </div>
+                    <div>
+                        <button class="form-button fb-button"><span id="fb-icon"></span> Entrar com o Facebook</button>
+                    </div>
+                    <div id="or">
+                        <div class="traco"></div>
+                        <span>OU</span>
+                        <div class="traco"></div>
+                    </div>
+                    <div id="form-login">
+                        <form action="">
+                            <input class="form-class" required type="text" placeholder="Numero do celular ou email" id="email-cadastro">
+                            <input class="form-class" required type="text"placeholder="Nome completo" id="name-cadastro">
+                            <input class="form-class" required type="text"placeholder="Nome de usuário" id="user-cadastro">
+                            <input class="form-class" required type="password"placeholder="senha" id="password-cadastro">
+                            <input class="form-button" required type="submit" value="Cadastre-se">
+                        </form>
+                    </div>
+                    <div class="message2">
+                        <p>Ao se cadastrar, você concorda com nossos <strong>Termos, Política de Dados e Política de Cookies.</strong></p>
+                    </div>
+                </div>
+
+                <div id="not-account" class="box">
+                    <span>Tem uma conta? </span><a href="/login">Conecte-se</a>
+                </div>
+            </div>
+        </div>
+        <script src="script/modal.js"></script>
+    </body>
+
+</html>
